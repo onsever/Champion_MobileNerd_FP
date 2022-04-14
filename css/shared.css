@@ -45,6 +45,11 @@ body {
 .navigation-links ul li {
   list-style-type: none;
   border-radius: 10px;
+  margin-right: 10px;
+}
+
+.navigation-links ul li:last-child {
+  margin-right: 0px;
 }
 
 .navigation-links ul li:hover {
@@ -131,6 +136,11 @@ body {
 
   .navigation-links ul li {
     text-align: center;
+    margin-right: 0px;
+  }
+
+  .navigation-links ul li:last-child {
+    margin-right: 0px;
   }
 
   .navigation-links ul li a {
