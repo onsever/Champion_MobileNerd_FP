@@ -32,12 +32,18 @@
     
   }
 aside{
-    width: 50%;
-    height: auto;
-    padding-right: 20px;
-    
-    float: left;
+  width: 50%;
+  padding-right: 20px;
+  height: 200px;
+  border-radius: 10px;
+  background: url(../images/javaandroid.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 1rem;
+  float: left;
 }
+
 
 .iframe-container {
     position: relative;
