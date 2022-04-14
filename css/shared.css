@@ -86,7 +86,7 @@ body {
 }
 
 .portfolio-header-image {
-  background: url(../images/header-image.jpeg);
+  background: url(/images/header-image.jpeg);
   width: 100%;
   height: 50vh;
   background-position: center;
