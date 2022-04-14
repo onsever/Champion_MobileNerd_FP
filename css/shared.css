@@ -137,10 +137,12 @@ body {
   .navigation-links ul li {
     text-align: center;
     margin-right: 0px;
+    margin-bottom: 5px;
   }
 
   .navigation-links ul li:last-child {
     margin-right: 0px;
+    margin-bottom: 0px;
   }
 
   .navigation-links ul li a {
