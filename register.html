@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registration</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/register.css'>
+</head>
+
+<body>
+    <div id="container">
+        <div id="reg-container">
+            <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="Email Address">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="url">Personal URL</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="url" id="url" name="url" placeholder="Personal URL">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="birth">Year of Birth</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="month" id="birth" name="birth">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Gender</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="radio" id="male" name="male" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="female" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="comments">Comments</label>
+                    </div>
+                    <div class="col-75 ">
+                        <textarea id="comments" name="comments" placeholder="Write something.."></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="confirm">
+                        <input type="checkbox" value="Submit" id="confirm">
+                        I certify all information is true and correct to the best of my knowledge.
+                    </label>
+                    <input type="submit" value="Clear all">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <footer class="footer-container">
+            <p>&copy; Copyright 2022. All rights reserved.</p>
+        </footer>
+    </div>
+    </div>
+</body>
+
+</html>
