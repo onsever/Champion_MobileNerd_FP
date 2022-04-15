@@ -6,7 +6,11 @@ toggleButton.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
 });
 
-currentAnchor.style.color = "violet";
-currentAnchor.style.backgroundColor = "whitesmoke";
-currentAnchor.style.borderRadius = "10px";
-currentAnchor.style.fontWeight = "bold";
+// currentAnchor.style.color = "violet";
+// currentAnchor.style.backgroundColor = "whitesmoke";
+// currentAnchor.style.borderRadius = "10px";
+// currentAnchor.style.fontWeight = "bold";
+
+function hybridAlert() {
+  alert("You are now navigate in Hybrid Blogs");
+}
