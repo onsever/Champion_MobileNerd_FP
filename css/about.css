@@ -53,6 +53,14 @@ tr td {
   padding-top: 20px;
 }
 
+.email-link {
+  color: violet;
+}
+
+.email-link:hover {
+  font-weight: bold;
+}
+
 .content-container h1 span {
   color: violet;
 }
