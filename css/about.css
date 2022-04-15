@@ -56,3 +56,42 @@ tr td {
 .content-container h1 span {
   color: violet;
 }
+
+@media (max-width: 820px) {
+  .main-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-container {
+    width: 100%;
+  }
+
+  .card-container:first-child {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .content-container {
+    text-align: center;
+    padding: 0.8rem;
+  }
+
+  .image-container {
+    border: none;
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .main-container aside {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .card-container:last-child {
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+}
