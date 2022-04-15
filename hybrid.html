@@ -11,6 +11,10 @@
       // setTimeout(() => {
       //   alert("You are now navigate in Hybrid Blogs");
       // }, 500);
+
+      function onClickStar () {
+        console.log('clicking')
+      }
     </script>
   </head>
   <body>
@@ -36,13 +40,19 @@
     </header>
     <main>
       <section>
-      <h1>Hybrid Development</h1>
+        <div class="header">
+          <h1>Hybrid Development</h1>
+          <a href="javascript:;" onclick="onClickStar()">
+          <img src="images/un_star.png" alt="start" width="25" height="25">
+          </a>
+        </div>
       <div class="container">
         <div class="blog">
           <div class="imageContainer">
             <img src="images/hybrid1.jpg" alt="headerImage" />
           </div>
           <h2>What is a hybrid application?</h2>
+          
           <p>
             <strong
               >One solution to this problem is creating a hybrid

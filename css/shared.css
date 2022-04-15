@@ -106,6 +106,14 @@ body {
   opacity: 0.75;
 }
 
+.header {
+  display: flex;
+}
+
+.header a {
+  margin-left: 0.5em;
+}
+
 .footer-container {
   display: flex;
   justify-content: center;
