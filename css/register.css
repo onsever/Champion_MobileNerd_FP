@@ -45,6 +45,8 @@ label {
 input[type="email"],
 input[type="url"],
 input[type="month"],
+input[type="password"],
+input[type="text"],
 select,
 textarea {
     width: 70%;
@@ -62,7 +64,7 @@ input[type=radio] {
     width: auto;
 }
 
-input[type=submit] {
+input[type=submit], input[type=reset] {
     background-color: gray;
     color: white;
     padding: 12px 20px;
@@ -75,7 +77,11 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #ffffff;
+    background-color: black;
+}
+
+input[type=reset]:hover {
+    background-color: red;
 }
 
 .footer-container {
