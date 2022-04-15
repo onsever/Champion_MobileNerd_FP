@@ -22,11 +22,26 @@ function register () {
       }else{
         localStorage.setItem('users', JSON.stringify([user]))
       }
-      console.log(users, typeof(users))
       alert('You have successfully register, now will jump to the home page.')
-    }else{
-      document.getElementById('regForm').reportValidationError
     }
+}
+
+function login(e) {
+  let form = document.getElementById('loginForm').elements
+  let email = form['email'].value
+  let password = stringToHash(form['password'].value)
+  if (document.getElementById('loginForm').checkValidity()){
+      let users = JSON.parse(localStorage.getItem('users'))
+      for (let i = 0; i < users.length; i++) {
+        let user = JSON.parse(users[i])
+        if (user.email === email && user.password === password) {
+          alert('Login successfully')
+          return
+        }
+      }
+      e.preventDefault()
+      alert('User not found')
+  }
 }
 
 function showPassword() {
