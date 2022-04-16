@@ -46,6 +46,11 @@ aside ul li {
   margin-left: 1em;
 }
 
+#favIcon {
+  width: 25px;
+  height: 25px;
+}
+
 @media (max-width: 820px) {
   main {
     display: block;
