@@ -18,31 +18,31 @@
  
   
   
-  /* Left column */
-  .rightcolumn {   
-    float: right;
-    width: 25%;
+   /* Left column */
+   .leftcolumn {   
+    float: left;
+    width: 75%;
     
   }
   
   /* Right column */
-  .leftcolumn {
-    float: left;
-    width: 75%;
-    padding-left: 20px;
+  .rightcolumn {
+    float: right;
+    width: 25%;
+    padding-right: 5px;    
   }
-aside{
-  width: 50%;
-  height: 200px;
-  padding-right: 20px;
-  border-radius: 10px;
-  background: url(../images/kotlinandroid.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 1rem;
-  float: left;
-}
+  aside{
+    width: 50%;
+    padding-right: 20px;
+    height: 200px;
+    border-radius: 10px;
+    background: url(../images/kotlinandroid.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1rem;
+    float: right;
+  }
 
 
 .iframe-container {
@@ -74,8 +74,8 @@ aside{
     background: -webkit-linear-gradient(right, #DED8ED, #DED4E3);
     background: -moz-linear-gradient(right, #DED8ED, #DED4E3);
     background: linear-gradient(to left, #DED8ED, #DED4E3);
-    padding: 20px;
-    margin-top: 20px;
+    padding: 5px;
+    margin: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 0.3cm;
      
