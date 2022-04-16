@@ -8,13 +8,25 @@
     <link rel="stylesheet" href="css/shared.css" />
     <link rel="stylesheet" href="css/hybrid.css" />
     <script>
-      // setTimeout(() => {
-      //   alert("You are now navigate in Hybrid Blogs");
-      // }, 500);
+      setTimeout(()=>{
+      const aTag = document.createElement('a');
+      aTag.id = "myFavBtn"
+      aTag.href = "javascript:;";
+      aTag.onclick = () => {
+        
+        const imageIcon = document.getElementById("myFavImage");
+        imageIcon.src = "images/un_star.png"
+      };
+      const img = document.createElement('img');
+      img.src = "images/star.png";
+      img.width = "25";
+      img.height = "25";
+      img.id = "myFavImage"
+      aTag.appendChild(img)
+      document.getElementById("favContainer").appendChild(aTag);
+      },100);
+      
 
-      function onClickStar () {
-        console.log('clicking')
-      }
     </script>
   </head>
   <body>
@@ -42,9 +54,9 @@
       <section>
         <div class="header">
           <h1>Hybrid Development</h1>
-          <a href="javascript:;" onclick="onClickStar()">
-          <img src="images/un_star.png" alt="start" width="25" height="25">
-          </a>
+          <div id="favContainer">
+
+          </div>
         </div>
       <div class="container">
         <div class="blog">
