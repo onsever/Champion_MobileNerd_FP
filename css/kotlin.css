@@ -19,17 +19,17 @@
   
   
   /* Left column */
-  .leftcolumn {   
-    float: left;
+  .rightcolumn {   
+    float: right;
     width: 25%;
-    padding-right: 20px;
+    
   }
   
   /* Right column */
-  .rightcolumn {
+  .leftcolumn {
     float: left;
     width: 75%;
-    
+    padding-left: 20px;
   }
 aside{
   width: 50%;
@@ -129,7 +129,9 @@ aside{
       padding: 5px;
       color: rgb(0, 0, 0);
   }
-
+  .textfooter{
+    color: rgb(255, 255, 255);
+  }
 
  
 @media screen and (max-width: 800px) {
