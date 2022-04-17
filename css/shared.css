@@ -168,7 +168,9 @@ body {
   }
 
   .portfolio-header-image {
-    /* height: 100vh; */
+    margin-top: 3em;
+    height: 20vh;
+    /* display: none; */
   }
 
   main {
