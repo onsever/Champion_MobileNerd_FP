@@ -30,6 +30,7 @@ function register() {
     } else {
       localStorage.setItem("favBlogs", JSON.stringify([favBlog]));
     }
+    localStorage.setItem("currentUser", user);
     alert("You have successfully register, now will jump to the home page.");
   }
 }
