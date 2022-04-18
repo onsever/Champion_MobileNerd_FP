@@ -80,6 +80,10 @@ tr td {
   color: violet;
 }
 
+.content-container p span {
+  color: violet;
+}
+
 @media (max-width: 820px) {
   .main-container {
     flex-direction: column;

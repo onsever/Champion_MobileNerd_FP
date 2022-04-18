@@ -14,3 +14,38 @@ toggleButton.addEventListener("click", () => {
 function hybridAlert() {
   alert("You are now navigate in Hybrid Blogs");
 }
+
+function editFav() {
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+  const favBlogs = JSON.parse(localStorage.getItem("favBlogs"));
+  const href = window.location.href;
+  for (const blog of favBlogs) {
+    if (blog.email === currentUser.email) {
+      if (blog.blogs.indexOf(href) === -1) {
+        blog.blogs.push(href)
+        document.getElementById("favIcon").src = 'images/star.png'
+      }else{
+        
+        blog.blogs.pop(href)
+        document.getElementById("favIcon").src = 'images/un_star.png'
+      }
+    }
+    localStorage.setItem("favBlogs", JSON.stringify(favBlogs))
+    return
+  }
+}
+
+function getFav() {
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+  const favBlogs = JSON.parse(localStorage.getItem("favBlogs"));
+  for (const blog of favBlogs) {
+    if (blog.email === currentUser.email) {
+      const blogs = blog.blogs
+      for (const blog of blogs) {
+        if (blog === window.location.href) {
+          document.getElementById("favIcon").src = 'images/star.png'
+        }
+      }
+    }
+  }
+}
