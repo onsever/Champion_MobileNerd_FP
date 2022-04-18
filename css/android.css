@@ -21,14 +21,15 @@
   /* Left column */
   .leftcolumn {   
     float: left;
-    width: 25%;
-    padding-right: 20px;
+    width: 75%;
+    
   }
   
   /* Right column */
   .rightcolumn {
-    float: left;
-    width: 75%;
+    float: right;
+    width: 25%;
+    padding-right: 20px;
     
   }
 aside{
@@ -130,7 +131,9 @@ aside{
     padding: 0;
     box-sizing: border-box;
   }
-  
+  .textfooter{
+    color: rgb(255, 255, 255);
+  }
   
   .navigation-bar {
     display: flex;
@@ -218,7 +221,6 @@ aside{
     background-size: cover;
     opacity: 0.75;
   }
-  
   .footer-container {
     display: flex;
     justify-content: center;
@@ -270,7 +272,7 @@ aside{
     }
   
     .portfolio-header-image {
-      height: 100vh;
+      /* height: 100vh; */
     }
   }
   @media screen and (max-width: 800px) {

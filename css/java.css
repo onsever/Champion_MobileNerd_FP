@@ -18,19 +18,20 @@
  
   
   
-  /* Left column */
-  .leftcolumn {   
-    float: left;
-    width: 25%;
-    padding-right: 20px;
-  }
+ /* Left column */
+ .leftcolumn {   
+  float: left;
+  width: 75%;
   
-  /* Right column */
-  .rightcolumn {
-    float: left;
-    width: 75%;
-    
-  }
+  
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 25%;
+  padding-right: 5px;
+}
 aside{
   width: 50%;
   padding-right: 20px;
@@ -41,7 +42,7 @@ aside{
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 1rem;
-  float: left;
+  float: right;
 }
 
 
@@ -128,6 +129,9 @@ aside{
   p{
       padding: 5px;
       color: rgb(0, 0, 0);
+  }
+.textfooter{
+    color: rgb(255, 255, 255);
   }
 
 
@@ -240,6 +244,7 @@ aside{
     height: 30px;
     background-color: rgb(76, 4, 130);
     color: white;
+    
   }
   
   @media (max-width: 820px) {
