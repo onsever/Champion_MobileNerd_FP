@@ -48,3 +48,19 @@ function getFav() {
     }
   }
 }
+
+function loadFav() {
+  const favBlogs = JSON.parse(localStorage.getItem("favBlogs"));
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+
+  for (const blog of favBlogs) {
+    if (blog.email === currentUser.email) {
+      for (const link of blog.blogs) {
+        const aTag = document.createElement("a");
+        aTag.href = link;
+        aTag.innerHTML = link;
+        document.getElementsByClassName("favContainer")[0].appendChild(aTag);
+      }
+    }
+  }
+}
