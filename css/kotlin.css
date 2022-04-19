@@ -86,11 +86,11 @@
     content: "";
     display: table;
     clear: both;
+  }  
+  #favIcon {
+    width: 25px;
+    height: 25px;
   }
-
-  
-  
-
  
   .column {
     float: left;

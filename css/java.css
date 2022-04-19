@@ -88,11 +88,11 @@ aside{
     display: table;
     clear: both;
   }
+  #favIcon {
+    width: 25px;
+    height: 25px;
+  }
 
-  
-  
-
- 
   .column {
     float: left;
     width: 33.33%;

@@ -9,7 +9,7 @@
     <script src="./scripts/shared.js" defer></script>
     <title>Java</title>
   </head>
-  <body>
+  <body onload="getFav()"> 
     <header class="main-header">
       <nav class="navigation-bar">
         <div class="logo"><a href="./index.html">MobileNerd</a></div>
@@ -56,7 +56,14 @@
         </div>
         <div class="leftcolumn">
           <div class="card">
-            <h2>Android Development with JAVA</h2>
+            <div class="header">
+              <h2>Android Development with Java</h2>
+              <div id="favContainer">
+                <a id="myFavBtn" onclick="editFav()">
+                  <img id="favIcon" src="images/un_star.png"/>
+                </a>
+              </div>
+               </div> 
 
             <br />
 
