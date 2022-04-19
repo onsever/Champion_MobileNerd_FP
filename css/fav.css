@@ -24,6 +24,11 @@ section {
   padding-top: 1em;
 }
 
+
+#favBlogContainer ul li a{
+  word-wrap: break-word;
+}
+
 @media (max-width: 820px) {
   main {
     display: block;
