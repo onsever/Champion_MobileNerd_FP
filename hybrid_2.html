@@ -10,7 +10,7 @@
 
     <script src="./scripts/shared.js" defer></script>
   </head>
-  <body>
+  <body onload="getFav()">
     <header class="main-header">
       <nav class="navigation-bar">
         <div class="logo"><a href="./index.html">MobileNerd</a></div>
@@ -33,7 +33,14 @@
     </header>
     <main>
       <section>
-      <h1>Hybrid Development</h1>
+        <div class="header">
+        <h1>Hybrid Development</h1>
+          <div id="favContainer">
+            <a id="myFavBtn" onclick="editFav()">
+              <img id="favIcon" src="images/un_star.png"/>
+            </a>
+          </div>
+        </div>
       <div class="container">
         <div class="blog">
           <div class="imageContainer">
