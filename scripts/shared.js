@@ -66,5 +66,5 @@ function loadFav() {
       }
     }
   }
-  document.getElementById("favContainer").appendChild(ul);
+  document.getElementById("favBlogContainer").appendChild(ul);
 }
