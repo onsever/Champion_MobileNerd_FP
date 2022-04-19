@@ -9,10 +9,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #DED8ED;
-  background: -webkit-linear-gradient(right, #DED8ED, #DED4E3);
-  background: -moz-linear-gradient(right, #DED8ED, #DED4E3);
-  background: linear-gradient(to left, #DED8ED, #DED4E3);
+  background: #ded8ed;
+  background: -webkit-linear-gradient(right, #ded8ed, #ded4e3);
+  background: -moz-linear-gradient(right, #ded8ed, #ded4e3);
+  background: linear-gradient(to left, #ded8ed, #ded4e3);
   border-radius: 0.7rem;
   width: 70%;
 }
@@ -31,17 +31,12 @@
   width: 100%;
   height: 100%;
 }
-aside{
+aside {
   width: 50%;
-  height: 200px;
+  height: 100%;
   padding-right: 20px;
   float: right;
   border-radius: 10px;
-  background: url(../images/android.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 1rem;
 }
 
 .card-container:last-child {
@@ -94,10 +89,6 @@ tr td {
   .card-container {
     width: 100%;
   }
-  aside{
-    width: 100%;
-    border-radius: 10px;
-  }
 
   .card-container:first-child {
     flex-direction: column;
@@ -119,6 +110,7 @@ tr td {
     width: 100%;
     margin-left: 0px;
     margin-right: 0px;
+    padding-right: 0px;
   }
 
   .card-container:last-child {
