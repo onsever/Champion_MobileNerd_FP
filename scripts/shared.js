@@ -56,7 +56,6 @@ function loadFav() {
   for (const blog of favBlogs) {
     if (blog.email === currentUser.email) {
       for (const link of blog.blogs) {
-        console.log(link);
         const aTag = document.createElement("a");
         aTag.href = link;
         aTag.innerHTML = link + "<br>";
