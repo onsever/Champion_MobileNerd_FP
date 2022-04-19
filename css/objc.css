@@ -40,6 +40,11 @@ aside{
     background-position: center;
     margin-bottom: 1rem;
 }
+
+#favIcon {
+  width: 25px;
+  height: 25px;
+}
   
   /* Fake image */
   .fakeimg {

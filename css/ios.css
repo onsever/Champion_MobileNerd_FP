@@ -55,6 +55,11 @@ aside {
   border-radius: 0.3cm;
 }
 
+#favIcon {
+  width: 25px;
+  height: 25px;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";

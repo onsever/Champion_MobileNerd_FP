@@ -10,7 +10,7 @@
     <title>Objective-C</title>
   </head>
 
-  <body>
+  <body onload="getFav()">
     <header class="main-header">
       <nav class="navigation-bar">
         <div class="logo"><a href="./index.html">MobileNerd</a></div>
@@ -50,7 +50,11 @@
         </div>
         <div class="rightcolumn">
           <div class="card">
-            <h2>iOS Development using Objective-C</h2>
+            <h2>iOS Development using Objective-C
+              <a id="myFavBtn" onclick="editFav()">
+                <img id="favIcon" src="images/un_star.png"/>
+              </a>
+            </h2>
             <br />
 
             <aside></aside>
