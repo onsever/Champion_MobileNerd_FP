@@ -52,15 +52,19 @@ function getFav() {
 function loadFav() {
   const favBlogs = JSON.parse(localStorage.getItem("favBlogs"));
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-
+  const ul = document.createElement("ul");
   for (const blog of favBlogs) {
     if (blog.email === currentUser.email) {
       for (const link of blog.blogs) {
+        console.log(link);
         const aTag = document.createElement("a");
         aTag.href = link;
-        aTag.innerHTML = link;
-        document.getElementsByClassName("favContainer")[0].appendChild(aTag);
+        aTag.innerHTML = link + "<br>";
+        const li = document.createElement("li");
+        li.appendChild(aTag);
+        ul.appendChild(li);
       }
     }
   }
+  document.getElementById("favContainer").appendChild(ul);
 }
