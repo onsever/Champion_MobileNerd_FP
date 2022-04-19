@@ -16,11 +16,11 @@ section {
   margin-top: 1em;
 }
 
-#favContainer ul {
+#favBlogContainer ul {
   padding: 1em;
 }
 
-#favContainer ul li {
+#favBlogContainer ul li {
   padding-top: 1em;
 }
 
@@ -35,9 +35,5 @@ section {
 
   section {
     width: 100%;
-  }
-
-  section .imageContainer {
-    text-align: center;
   }
 }
