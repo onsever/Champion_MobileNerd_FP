@@ -17,20 +17,25 @@ function hybridAlert() {
 
 function editFav() {
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-  const favBlogs = JSON.parse(localStorage.getItem("favBlogs"));
-  const href = window.location.href;
-  for (const blog of favBlogs) {
-    if (blog.email === currentUser.email) {
-      if (blog.blogs.indexOf(href) === -1) {
-        blog.blogs.push(href);
-        document.getElementById("favIcon").src = "images/star.png";
-      } else {
-        blog.blogs.pop(href);
-        document.getElementById("favIcon").src = "images/un_star.png";
+  console.log(currentUser)
+  if (currentUser === 'null') {
+    alert("You must login to use my favorite feature")
+  } else {
+    const favBlogs = JSON.parse(localStorage.getItem("favBlogs"));
+    const href = window.location.href;
+    for (const blog of favBlogs) {
+      if (blog.email === currentUser.email) {
+        if (blog.blogs.indexOf(href) === -1) {
+          blog.blogs.push(href);
+          document.getElementById("favIcon").src = "images/star.png";
+        } else {
+          blog.blogs.pop(href);
+          document.getElementById("favIcon").src = "images/un_star.png";
+        }
       }
+      localStorage.setItem("favBlogs", JSON.stringify(favBlogs));
+      return;
     }
-    localStorage.setItem("favBlogs", JSON.stringify(favBlogs));
-    return;
   }
 }
 
@@ -66,4 +71,10 @@ function loadFav() {
     }
   }
   document.getElementById("favBlogContainer").appendChild(ul);
+}
+
+function logout() {
+  localStorage.setItem('currentUser', JSON.stringify('null'))
+  alert(`Logout successfully.`);
+  location.reload();
 }

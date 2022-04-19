@@ -31,7 +31,7 @@ function register() {
       localStorage.setItem("favBlogs", JSON.stringify([favBlog]));
     }
     localStorage.setItem("currentUser", user);
-    alert("You have successfully register, now will jump to the home page.");
+    alert(`You have successfully register, now will jump to the home page. Welcome ${email}`);
   }
 }
 
@@ -45,7 +45,7 @@ function login(e) {
       let user = JSON.parse(users[i]);
       if (user.email === email && user.password === password) {
         localStorage.setItem("currentUser", JSON.stringify(user));
-        alert("Login successfully");
+        alert(`Login successfully. Welcome ${email} `);
         return;
       }
     }
